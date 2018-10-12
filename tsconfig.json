@@ -1,0 +1,10 @@
+{
+  "include": [
+    "src"
+  ],
+  "compilerOptions": {
+    "module": "amd",
+    "outDir": "js",
+    "target": "es5"
+  }
+}
