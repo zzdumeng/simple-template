@@ -1,9 +1,10 @@
 {
-  "name": "simpleProject",
+  "name": "simple-template",
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "start": "tsc -w &  stylus &"
+    "start": "tsc -w &  stylus -w -o css/ style/* &",
+    "server": "browser-sync start --server --files index.html js/ css/"
   }
 }
