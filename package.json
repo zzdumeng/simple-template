@@ -4,7 +4,9 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "start": "tsc -w &  stylus -w -o css/ style/* &",
-    "server": "browser-sync start --server --files index.html js/ css/"
+    "start": "tsc -w &  stylus -w -u  autoprefixer-stylus -o css/ style/* &", 
+    "build": "tsc && stylus -u autoprefixer-stylus -o css/ style/*  ",
+    "server": "browser-sync start --server --files index.html js/ css/",
+    "dev": "yarn run start & yarn run server &"
   }
 }
